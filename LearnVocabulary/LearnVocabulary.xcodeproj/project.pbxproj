@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F787F68120990723000FC683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787F68020990723000FC683 /* AppDelegate.swift */; };
+		F787F68320990723000FC683 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787F68220990723000FC683 /* FirstViewController.swift */; };
+		F787F68520990723000FC683 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787F68420990723000FC683 /* SecondViewController.swift */; };
+		F787F68820990723000FC683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F787F68620990723000FC683 /* Main.storyboard */; };
+		F787F68A20990726000FC683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F787F68920990726000FC683 /* Assets.xcassets */; };
+		F787F68D20990726000FC683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F787F68B20990726000FC683 /* LaunchScreen.storyboard */; };
+		F787F69820990727000FC683 /* LearnVocabularyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787F69720990727000FC683 /* LearnVocabularyTests.swift */; };
+		F787F6A320990727000FC683 /* LearnVocabularyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787F6A220990727000FC683 /* LearnVocabularyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F787F69420990727000FC683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F787F67520990723000FC683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F787F67C20990723000FC683;
+			remoteInfo = LearnVocabulary;
+		};
+		F787F69F20990727000FC683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F787F67520990723000FC683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F787F67C20990723000FC683;
+			remoteInfo = LearnVocabulary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F787F67D20990723000FC683 /* LearnVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F787F68020990723000FC683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F787F68220990723000FC683 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F787F68420990723000FC683 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F787F68720990723000FC683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F787F68920990726000FC683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F787F68C20990726000FC683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F787F68E20990726000FC683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F787F69320990727000FC683 /* LearnVocabularyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnVocabularyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F787F69720990727000FC683 /* LearnVocabularyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnVocabularyTests.swift; sourceTree = "<group>"; };
+		F787F69920990727000FC683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F787F69E20990727000FC683 /* LearnVocabularyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnVocabularyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F787F6A220990727000FC683 /* LearnVocabularyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnVocabularyUITests.swift; sourceTree = "<group>"; };
+		F787F6A420990727000FC683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F787F67A20990723000FC683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F787F69020990727000FC683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F787F69B20990727000FC683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F787F67420990723000FC683 = {
+			isa = PBXGroup;
+			children = (
+				F787F67F20990723000FC683 /* LearnVocabulary */,
+				F787F69620990727000FC683 /* LearnVocabularyTests */,
+				F787F6A120990727000FC683 /* LearnVocabularyUITests */,
+				F787F67E20990723000FC683 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F787F67E20990723000FC683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F787F67D20990723000FC683 /* LearnVocabulary.app */,
+				F787F69320990727000FC683 /* LearnVocabularyTests.xctest */,
+				F787F69E20990727000FC683 /* LearnVocabularyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F787F67F20990723000FC683 /* LearnVocabulary */ = {
+			isa = PBXGroup;
+			children = (
+				F787F68020990723000FC683 /* AppDelegate.swift */,
+				F787F68220990723000FC683 /* FirstViewController.swift */,
+				F787F68420990723000FC683 /* SecondViewController.swift */,
+				F787F68620990723000FC683 /* Main.storyboard */,
+				F787F68920990726000FC683 /* Assets.xcassets */,
+				F787F68B20990726000FC683 /* LaunchScreen.storyboard */,
+				F787F68E20990726000FC683 /* Info.plist */,
+			);
+			path = LearnVocabulary;
+			sourceTree = "<group>";
+		};
+		F787F69620990727000FC683 /* LearnVocabularyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F787F69720990727000FC683 /* LearnVocabularyTests.swift */,
+				F787F69920990727000FC683 /* Info.plist */,
+			);
+			path = LearnVocabularyTests;
+			sourceTree = "<group>";
+		};
+		F787F6A120990727000FC683 /* LearnVocabularyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F787F6A220990727000FC683 /* LearnVocabularyUITests.swift */,
+				F787F6A420990727000FC683 /* Info.plist */,
+			);
+			path = LearnVocabularyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F787F67C20990723000FC683 /* LearnVocabulary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F787F6A720990727000FC683 /* Build configuration list for PBXNativeTarget "LearnVocabulary" */;
+			buildPhases = (
+				F787F67920990723000FC683 /* Sources */,
+				F787F67A20990723000FC683 /* Frameworks */,
+				F787F67B20990723000FC683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnVocabulary;
+			productName = LearnVocabulary;
+			productReference = F787F67D20990723000FC683 /* LearnVocabulary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F787F69220990727000FC683 /* LearnVocabularyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F787F6AA20990727000FC683 /* Build configuration list for PBXNativeTarget "LearnVocabularyTests" */;
+			buildPhases = (
+				F787F68F20990727000FC683 /* Sources */,
+				F787F69020990727000FC683 /* Frameworks */,
+				F787F69120990727000FC683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F787F69520990727000FC683 /* PBXTargetDependency */,
+			);
+			name = LearnVocabularyTests;
+			productName = LearnVocabularyTests;
+			productReference = F787F69320990727000FC683 /* LearnVocabularyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F787F69D20990727000FC683 /* LearnVocabularyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F787F6AD20990727000FC683 /* Build configuration list for PBXNativeTarget "LearnVocabularyUITests" */;
+			buildPhases = (
+				F787F69A20990727000FC683 /* Sources */,
+				F787F69B20990727000FC683 /* Frameworks */,
+				F787F69C20990727000FC683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F787F6A020990727000FC683 /* PBXTargetDependency */,
+			);
+			name = LearnVocabularyUITests;
+			productName = LearnVocabularyUITests;
+			productReference = F787F69E20990727000FC683 /* LearnVocabularyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F787F67520990723000FC683 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = panadie;
+				TargetAttributes = {
+					F787F67C20990723000FC683 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					F787F69220990727000FC683 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F787F67C20990723000FC683;
+					};
+					F787F69D20990727000FC683 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F787F67C20990723000FC683;
+					};
+				};
+			};
+			buildConfigurationList = F787F67820990723000FC683 /* Build configuration list for PBXProject "LearnVocabulary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F787F67420990723000FC683;
+			productRefGroup = F787F67E20990723000FC683 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F787F67C20990723000FC683 /* LearnVocabulary */,
+				F787F69220990727000FC683 /* LearnVocabularyTests */,
+				F787F69D20990727000FC683 /* LearnVocabularyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F787F67B20990723000FC683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F787F68D20990726000FC683 /* LaunchScreen.storyboard in Resources */,
+				F787F68A20990726000FC683 /* Assets.xcassets in Resources */,
+				F787F68820990723000FC683 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F787F69120990727000FC683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F787F69C20990727000FC683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F787F67920990723000FC683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F787F68520990723000FC683 /* SecondViewController.swift in Sources */,
+				F787F68120990723000FC683 /* AppDelegate.swift in Sources */,
+				F787F68320990723000FC683 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F787F68F20990727000FC683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F787F69820990727000FC683 /* LearnVocabularyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F787F69A20990727000FC683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F787F6A320990727000FC683 /* LearnVocabularyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F787F69520990727000FC683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F787F67C20990723000FC683 /* LearnVocabulary */;
+			targetProxy = F787F69420990727000FC683 /* PBXContainerItemProxy */;
+		};
+		F787F6A020990727000FC683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F787F67C20990723000FC683 /* LearnVocabulary */;
+			targetProxy = F787F69F20990727000FC683 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F787F68620990723000FC683 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F787F68720990723000FC683 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F787F68B20990726000FC683 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F787F68C20990726000FC683 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F787F6A520990727000FC683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F787F6A620990727000FC683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F787F6A820990727000FC683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K4NHSAP24;
+				INFOPLIST_FILE = LearnVocabulary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panadie.LearnVocabulary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F787F6A920990727000FC683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K4NHSAP24;
+				INFOPLIST_FILE = LearnVocabulary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panadie.LearnVocabulary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F787F6AB20990727000FC683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K4NHSAP24;
+				INFOPLIST_FILE = LearnVocabularyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panadie.LearnVocabularyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnVocabulary.app/LearnVocabulary";
+			};
+			name = Debug;
+		};
+		F787F6AC20990727000FC683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K4NHSAP24;
+				INFOPLIST_FILE = LearnVocabularyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panadie.LearnVocabularyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnVocabulary.app/LearnVocabulary";
+			};
+			name = Release;
+		};
+		F787F6AE20990727000FC683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K4NHSAP24;
+				INFOPLIST_FILE = LearnVocabularyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panadie.LearnVocabularyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnVocabulary;
+			};
+			name = Debug;
+		};
+		F787F6AF20990727000FC683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K4NHSAP24;
+				INFOPLIST_FILE = LearnVocabularyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panadie.LearnVocabularyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnVocabulary;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F787F67820990723000FC683 /* Build configuration list for PBXProject "LearnVocabulary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F787F6A520990727000FC683 /* Debug */,
+				F787F6A620990727000FC683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F787F6A720990727000FC683 /* Build configuration list for PBXNativeTarget "LearnVocabulary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F787F6A820990727000FC683 /* Debug */,
+				F787F6A920990727000FC683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F787F6AA20990727000FC683 /* Build configuration list for PBXNativeTarget "LearnVocabularyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F787F6AB20990727000FC683 /* Debug */,
+				F787F6AC20990727000FC683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F787F6AD20990727000FC683 /* Build configuration list for PBXNativeTarget "LearnVocabularyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F787F6AE20990727000FC683 /* Debug */,
+				F787F6AF20990727000FC683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F787F67520990723000FC683 /* Project object */;
+}

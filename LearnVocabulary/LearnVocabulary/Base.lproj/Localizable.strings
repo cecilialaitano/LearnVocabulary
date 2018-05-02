@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  LearnVocabulary
+
+  Created by Cecilia Laitano on 01/05/2018.
+  Copyright © 2018 panadie. All rights reserved.
+*/
+
+// MARK: - Add new word
+"Save" = "Save";
+"New word" = "New word";
+"Definition" = "Definition";
+"Example" = "Example";

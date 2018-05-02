@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "66g-9d-C62"; */
+"66g-9d-C62.normalTitle" = "Save";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut incididunt ut labore et dolore magna aliqua. Ut "; ObjectID = "84c-Wt-xIY"; */
+"84c-Wt-xIY.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut incididunt ut labore et dolore magna aliqua. Ut ";
+
+/* Class = "UILabel"; text = "Add new words to keep leraning!"; ObjectID = "A5M-7J-77L"; */
+"A5M-7J-77L.text" = "Add new words to keep leraning!";
+
+/* Class = "UILabel"; text = "definition"; ObjectID = "D7R-SI-kQG"; */
+"D7R-SI-kQG.text" = "definition";
+
+/* Class = "UILabel"; text = "No words yet"; ObjectID = "KQZ-1w-vlD"; */
+"KQZ-1w-vlD.text" = "No words yet";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur "; ObjectID = "Q3W-nK-0bw"; */
+"Q3W-nK-0bw.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur ";
+
+/* Class = "UILabel"; text = "example"; ObjectID = "RJv-KZ-JTh"; */
+"RJv-KZ-JTh.text" = "example";
+
+/* Class = "UITabBarItem"; title = "List"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "List";
+
+/* Class = "UITabBarItem"; title = "Add"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Add";
+
+/* Class = "UITextField"; placeholder = "New Word"; ObjectID = "tkd-9u-11C"; */
+"tkd-9u-11C.placeholder" = "New Word";

@@ -112,6 +112,9 @@
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTapSaveButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Rsr-im-Qf4"/>
+                                </connections>
                             </button>
                             <textView contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3W-nK-0bw">
                                 <rect key="frame" x="16" y="163" width="343" height="33"/>
@@ -148,6 +151,14 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="definitionLabel" destination="D7R-SI-kQG" id="C6V-zD-Kco"/>
+                        <outlet property="definitionTextView" destination="Q3W-nK-0bw" id="3sg-aa-Svb"/>
+                        <outlet property="exampleLabel" destination="RJv-KZ-JTh" id="1t3-eR-32s"/>
+                        <outlet property="exampleTextView" destination="84c-Wt-xIY" id="ShW-WY-JXR"/>
+                        <outlet property="newWordTextField" destination="tkd-9u-11C" id="1iP-My-R55"/>
+                        <outlet property="saveButton" destination="66g-9d-C62" id="8Xe-82-uKu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

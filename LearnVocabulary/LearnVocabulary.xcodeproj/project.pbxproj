@@ -16,6 +16,8 @@
 		F7D66FAB20995F0C00418C95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D66FA920995F0C00418C95 /* Localizable.strings */; };
 		F7D66FB22099612C00418C95 /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FAF2099612C00418C95 /* AddWordViewController.swift */; };
 		F7D66FB32099612C00418C95 /* ListWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FB12099612C00418C95 /* ListWordsViewController.swift */; };
+		F7D66FB52099617000418C95 /* AddNewWordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FB42099617000418C95 /* AddNewWordPresenter.swift */; };
+		F7D66FB82099684500418C95 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FB72099684500418C95 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		F7D66FAC20995F2B00418C95 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = LearnVocabulary/es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F7D66FAF2099612C00418C95 /* AddWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
 		F7D66FB12099612C00418C95 /* ListWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWordsViewController.swift; sourceTree = "<group>"; };
+		F7D66FB42099617000418C95 /* AddNewWordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewWordPresenter.swift; sourceTree = "<group>"; };
+		F7D66FB72099684500418C95 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		F787F67F20990723000FC683 /* LearnVocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				F7D66FB62099683000418C95 /* Utils */,
 				F787F68020990723000FC683 /* AppDelegate.swift */,
 				F787F68620990723000FC683 /* Main.storyboard */,
 				F787F68920990726000FC683 /* Assets.xcassets */,
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				F7D66FAF2099612C00418C95 /* AddWordViewController.swift */,
+				F7D66FB42099617000418C95 /* AddNewWordPresenter.swift */,
 			);
 			path = AddWord;
 			sourceTree = "<group>";
@@ -148,6 +154,14 @@
 				F7D66FB12099612C00418C95 /* ListWordsViewController.swift */,
 			);
 			path = ListWords;
+			sourceTree = "<group>";
+		};
+		F7D66FB62099683000418C95 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F7D66FB72099684500418C95 /* StringExtension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +299,9 @@
 			files = (
 				F787F68120990723000FC683 /* AppDelegate.swift in Sources */,
 				F7D66FB22099612C00418C95 /* AddWordViewController.swift in Sources */,
+				F7D66FB82099684500418C95 /* StringExtension.swift in Sources */,
 				F7D66FB32099612C00418C95 /* ListWordsViewController.swift in Sources */,
+				F7D66FB52099617000418C95 /* AddNewWordPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

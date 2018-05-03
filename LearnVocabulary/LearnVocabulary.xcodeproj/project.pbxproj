@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7146E7D209A2CAD00F3990F /* TextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7146E7C209A2CAD00F3990F /* TextViewExtension.swift */; };
 		F787F68120990723000FC683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787F68020990723000FC683 /* AppDelegate.swift */; };
 		F787F68820990723000FC683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F787F68620990723000FC683 /* Main.storyboard */; };
 		F787F68A20990726000FC683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F787F68920990726000FC683 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 		F7D66FB32099612C00418C95 /* ListWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FB12099612C00418C95 /* ListWordsViewController.swift */; };
 		F7D66FB52099617000418C95 /* AddNewWordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FB42099617000418C95 /* AddNewWordPresenter.swift */; };
 		F7D66FB82099684500418C95 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FB72099684500418C95 /* StringExtension.swift */; };
+		F7D66FBB20997DB600418C95 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FBA20997DB600418C95 /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7146E7C209A2CAD00F3990F /* TextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewExtension.swift; sourceTree = "<group>"; };
 		F787F67D20990723000FC683 /* LearnVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F787F68020990723000FC683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F787F68720990723000FC683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		F7D66FB12099612C00418C95 /* ListWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWordsViewController.swift; sourceTree = "<group>"; };
 		F7D66FB42099617000418C95 /* AddNewWordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewWordPresenter.swift; sourceTree = "<group>"; };
 		F7D66FB72099684500418C95 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		F7D66FBA20997DB600418C95 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		F787F67F20990723000FC683 /* LearnVocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				F7D66FB920997DAB00418C95 /* Models */,
 				F7D66FB62099683000418C95 /* Utils */,
 				F787F68020990723000FC683 /* AppDelegate.swift */,
 				F787F68620990723000FC683 /* Main.storyboard */,
@@ -160,8 +165,17 @@
 			isa = PBXGroup;
 			children = (
 				F7D66FB72099684500418C95 /* StringExtension.swift */,
+				F7146E7C209A2CAD00F3990F /* TextViewExtension.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F7D66FB920997DAB00418C95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7D66FBA20997DB600418C95 /* Word.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +314,10 @@
 				F787F68120990723000FC683 /* AppDelegate.swift in Sources */,
 				F7D66FB22099612C00418C95 /* AddWordViewController.swift in Sources */,
 				F7D66FB82099684500418C95 /* StringExtension.swift in Sources */,
+				F7146E7D209A2CAD00F3990F /* TextViewExtension.swift in Sources */,
 				F7D66FB32099612C00418C95 /* ListWordsViewController.swift in Sources */,
 				F7D66FB52099617000418C95 /* AddNewWordPresenter.swift in Sources */,
+				F7D66FBB20997DB600418C95 /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

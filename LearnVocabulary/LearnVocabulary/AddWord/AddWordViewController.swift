@@ -16,6 +16,7 @@ enum TextViewCase: Int {
   case definition = 0
   case example = 1
 }
+typealias WordMaker = (word: String?, definition:String?, example: String?)
 
 class AddWordViewController: UIViewController {
 
@@ -35,7 +36,7 @@ class AddWordViewController: UIViewController {
   }
 
   override func viewWillAppear(_ animated: Bool) {
-    saveButton.isEnabled = presenter.saveButtonIsEnable()
+    displayEmpty()
   }
 
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -61,9 +62,19 @@ class AddWordViewController: UIViewController {
     exampleTextView.styleAs(placeholder: presenter.getExamplePlacehololder())
   }
 
+  private func displayEmpty() {
+    newWordTextField.text = String()
+    definitionTextView.text = String()
+    exampleTextView.text = String()
+  }
+
   // MARK: - Actions
   @IBAction func onTapSaveButton(_ sender: Any) {
-    //validate required fields and save word.
+    let word = WordMaker(word: newWordTextField.text,
+                       definition: definitionTextView.text,
+                       example: exampleTextView.text)
+    //TODO: handle success and error
+    presenter.onTapSave(word: word)
   }
 
   // MARK: - Setup TextView's Types

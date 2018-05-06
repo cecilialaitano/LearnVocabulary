@@ -10,17 +10,19 @@ import UIKit
 
 class ListWordsViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  override func viewWillAppear(_ animated: Bool) {
+    if let words = WordDAL().fetchAll() as? [Word] {
+      for w in words {
+        print(w.term)
+        print(w.definition)
+         print(w.example)
+      }
     }
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     /*
     // MARK: - Navigation

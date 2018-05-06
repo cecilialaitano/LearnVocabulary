@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		F7146E7D209A2CAD00F3990F /* TextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7146E7C209A2CAD00F3990F /* TextViewExtension.swift */; };
+		F71A9BCF209CF9310007D84A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A9BCE209CF9310007D84A /* DataController.swift */; };
+		F732FA64209BBD4400B483AC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F732FA61209BBD4200B483AC /* Model.xcdatamodeld */; };
 		F787F68120990723000FC683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787F68020990723000FC683 /* AppDelegate.swift */; };
 		F787F68820990723000FC683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F787F68620990723000FC683 /* Main.storyboard */; };
 		F787F68A20990726000FC683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F787F68920990726000FC683 /* Assets.xcassets */; };
 		F787F68D20990726000FC683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F787F68B20990726000FC683 /* LaunchScreen.storyboard */; };
 		F787F69820990727000FC683 /* LearnVocabularyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787F69720990727000FC683 /* LearnVocabularyTests.swift */; };
 		F787F6A320990727000FC683 /* LearnVocabularyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787F6A220990727000FC683 /* LearnVocabularyUITests.swift */; };
+		F7993A61209F7FF300595393 /* DataAccessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7993A5F209F7FF200595393 /* DataAccessLayer.swift */; };
+		F7993A62209F7FF300595393 /* WordDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7993A60209F7FF200595393 /* WordDAL.swift */; };
+		F7993A64209F82B900595393 /* WordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7993A63209F82B900595393 /* WordValidation.swift */; };
 		F7D66FAB20995F0C00418C95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D66FA920995F0C00418C95 /* Localizable.strings */; };
 		F7D66FB22099612C00418C95 /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FAF2099612C00418C95 /* AddWordViewController.swift */; };
 		F7D66FB32099612C00418C95 /* ListWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FB12099612C00418C95 /* ListWordsViewController.swift */; };
 		F7D66FB52099617000418C95 /* AddNewWordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FB42099617000418C95 /* AddNewWordPresenter.swift */; };
 		F7D66FB82099684500418C95 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FB72099684500418C95 /* StringExtension.swift */; };
-		F7D66FBB20997DB600418C95 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FBA20997DB600418C95 /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		F7146E7C209A2CAD00F3990F /* TextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewExtension.swift; sourceTree = "<group>"; };
+		F71A9BCE209CF9310007D84A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F732FA62209BBD4200B483AC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F787F67D20990723000FC683 /* LearnVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F787F68020990723000FC683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F787F68720990723000FC683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +59,9 @@
 		F787F69E20990727000FC683 /* LearnVocabularyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnVocabularyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F787F6A220990727000FC683 /* LearnVocabularyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnVocabularyUITests.swift; sourceTree = "<group>"; };
 		F787F6A420990727000FC683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7993A5F209F7FF200595393 /* DataAccessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccessLayer.swift; sourceTree = "<group>"; };
+		F7993A60209F7FF200595393 /* WordDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDAL.swift; sourceTree = "<group>"; };
+		F7993A63209F82B900595393 /* WordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordValidation.swift; sourceTree = "<group>"; };
 		F7D66FA720995EAA00418C95 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		F7D66FA820995EAA00418C95 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F7D66FAA20995F0C00418C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = LearnVocabulary/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -61,7 +70,6 @@
 		F7D66FB12099612C00418C95 /* ListWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWordsViewController.swift; sourceTree = "<group>"; };
 		F7D66FB42099617000418C95 /* AddNewWordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewWordPresenter.swift; sourceTree = "<group>"; };
 		F7D66FB72099684500418C95 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		F7D66FBA20997DB600418C95 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F732FA5E209BBD4200B483AC /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				F7993A5E209F7FF200595393 /* Data Access Layer */,
+				F732FA61209BBD4200B483AC /* Model.xcdatamodeld */,
+				F71A9BCE209CF9310007D84A /* DataController.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
 		F787F67420990723000FC683 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +131,7 @@
 		F787F67F20990723000FC683 /* LearnVocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				F7D66FB920997DAB00418C95 /* Models */,
+				F732FA5E209BBD4200B483AC /* DataBase */,
 				F7D66FB62099683000418C95 /* Utils */,
 				F787F68020990723000FC683 /* AppDelegate.swift */,
 				F787F68620990723000FC683 /* Main.storyboard */,
@@ -144,6 +162,15 @@
 			path = LearnVocabularyUITests;
 			sourceTree = "<group>";
 		};
+		F7993A5E209F7FF200595393 /* Data Access Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F7993A5F209F7FF200595393 /* DataAccessLayer.swift */,
+				F7993A60209F7FF200595393 /* WordDAL.swift */,
+			);
+			path = "Data Access Layer";
+			sourceTree = "<group>";
+		};
 		F7D66FAE2099612C00418C95 /* AddWord */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,16 +193,9 @@
 			children = (
 				F7D66FB72099684500418C95 /* StringExtension.swift */,
 				F7146E7C209A2CAD00F3990F /* TextViewExtension.swift */,
+				F7993A63209F82B900595393 /* WordValidation.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		F7D66FB920997DAB00418C95 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F7D66FBA20997DB600418C95 /* Word.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,12 +332,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F787F68120990723000FC683 /* AppDelegate.swift in Sources */,
+				F7993A61209F7FF300595393 /* DataAccessLayer.swift in Sources */,
 				F7D66FB22099612C00418C95 /* AddWordViewController.swift in Sources */,
 				F7D66FB82099684500418C95 /* StringExtension.swift in Sources */,
+				F71A9BCF209CF9310007D84A /* DataController.swift in Sources */,
 				F7146E7D209A2CAD00F3990F /* TextViewExtension.swift in Sources */,
 				F7D66FB32099612C00418C95 /* ListWordsViewController.swift in Sources */,
+				F732FA64209BBD4400B483AC /* Model.xcdatamodeld in Sources */,
+				F7993A64209F82B900595393 /* WordValidation.swift in Sources */,
 				F7D66FB52099617000418C95 /* AddNewWordPresenter.swift in Sources */,
-				F7D66FBB20997DB600418C95 /* Word.swift in Sources */,
+				F7993A62209F7FF300595393 /* WordDAL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +681,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F732FA61209BBD4200B483AC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F732FA62209BBD4200B483AC /* Model.xcdatamodel */,
+			);
+			currentVersion = F732FA62209BBD4200B483AC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F787F67520990723000FC683 /* Project object */;
 }

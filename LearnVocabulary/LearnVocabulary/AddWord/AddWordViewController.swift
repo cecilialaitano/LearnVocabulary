@@ -10,13 +10,17 @@ import UIKit
 
 protocol AddWordProtocol {
   func displaySavedSucces()
+  func displaySaveError(_ error: String)
+
 }
 
 enum TextViewCase: Int {
   case definition = 0
   case example = 1
 }
-typealias WordMaker = (word: String?, definition:String?, example: String?)
+
+
+typealias WordBuilder = (word: String?, definition:String?, example: String?)
 
 class AddWordViewController: UIViewController {
 
@@ -70,10 +74,10 @@ class AddWordViewController: UIViewController {
 
   // MARK: - Actions
   @IBAction func onTapSaveButton(_ sender: Any) {
-    let word = WordMaker(word: newWordTextField.text,
+    let word = WordBuilder(word: newWordTextField.text,
                        definition: definitionTextView.text,
                        example: exampleTextView.text)
-    //TODO: handle success and error
+
     presenter.onTapSave(word: word)
   }
 
@@ -90,7 +94,17 @@ class AddWordViewController: UIViewController {
 extension AddWordViewController: AddWordProtocol {
 
   func displaySavedSucces() {
-    // add implementation
+    let alertSaved = UIAlertController(title: "Saved", message: nil, preferredStyle: .alert)
+    alertSaved.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+      self.displayEmpty()
+    }))
+    present(alertSaved, animated: true, completion: nil)
+  }
+
+  func displaySaveError(_ error: String) {
+    let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    present(alert, animated: true, completion: nil)
   }
 }
 

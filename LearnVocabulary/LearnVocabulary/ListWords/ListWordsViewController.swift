@@ -14,11 +14,11 @@ class ListWordsViewController: UIViewController {
     super.viewDidLoad()
   }
   override func viewWillAppear(_ animated: Bool) {
-    if let words = WordDAL().fetchAll() as? [Word] {
+    if let words = WordDAL().fetchAllWords() {
       for w in words {
         print(w.term)
         print(w.definition)
-         print(w.example)
+        print(w.example ?? String())
       }
     }
   }

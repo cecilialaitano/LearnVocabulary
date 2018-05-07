@@ -15,11 +15,11 @@ enum WordBuilderError: String {
 
 struct WordValidation {
 
-  func validate(wordMaker: WordMaker) -> (isSuccess: Bool, error: String?) {
-    guard let word = wordMaker.word, word != String() else {
+  func validate(wordBuilder: WordBuilder) -> (isSuccess: Bool, error: String?) {
+    guard let word = wordBuilder.word, word != String() else {
       return (false, WordBuilderError.missingWord.rawValue)
     }
-    guard let definition = wordMaker.definition, definition != String() else {
+    guard let definition = wordBuilder.definition, definition != String() else {
       return (false, WordBuilderError.missingDefinition.rawValue)
     }
     return (true, nil)

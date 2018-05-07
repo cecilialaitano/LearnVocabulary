@@ -98,29 +98,21 @@ class AddNewWordPresenter {
   }
 
   // MARK: Validate and Build Word
-  func onTapSave(word: WordMaker) -> (isSuccess: Bool, error: String?) {
-    let result = WordValidation().validate(wordMaker: word)
+  func onTapSave(word: WordBuilder) {
+    let result = WordValidation().validate(wordBuilder: word)
     if !result.isSuccess {
-      return (false, result.error)
+      view?.displaySaveError(result.error ?? "Some error occur")
     }
-    return build(word)
-  }
+    let newWord = Word(term: word.word!, definition: word.definition!, example: word.example, isHighlighted: false)
 
-  func build(_ wordMaker: WordMaker) -> (isSuccess: Bool, error: String?) {
+    WordDAL().saveWord(newWord, saveWordResult: { (word, error) in
+      if let error = error {
+        view?.displaySaveError(error)
+      } else {
+        view?.displaySavedSucces()
+      }
+    })
 
-    let word = WordDAL().createNewEntity(managedObject: Word())
-
-    word.setValue(wordMaker.word!, forKey: "term")
-    word.setValue(wordMaker.definition!, forKey: "definition")
-    word.setValue(wordMaker.example, forKey: "example")
-
-    do {
-      try WordDAL().saveContext()
-      return(true, nil)
-    } catch {
-      //TODO: Rewrite handle error
-      return (false, "Some problem ocurre while trying to save data. Please try again")
-    }
   }
 }
 

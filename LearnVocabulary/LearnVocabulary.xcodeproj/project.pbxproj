@@ -19,6 +19,7 @@
 		F7993A61209F7FF300595393 /* DataAccessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7993A5F209F7FF200595393 /* DataAccessLayer.swift */; };
 		F7993A62209F7FF300595393 /* WordDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7993A60209F7FF200595393 /* WordDAL.swift */; };
 		F7993A64209F82B900595393 /* WordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7993A63209F82B900595393 /* WordValidation.swift */; };
+		F7993A6A20A0DA7200595393 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7993A6920A0DA7200595393 /* Word.swift */; };
 		F7D66FAB20995F0C00418C95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D66FA920995F0C00418C95 /* Localizable.strings */; };
 		F7D66FB22099612C00418C95 /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FAF2099612C00418C95 /* AddWordViewController.swift */; };
 		F7D66FB32099612C00418C95 /* ListWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66FB12099612C00418C95 /* ListWordsViewController.swift */; };
@@ -62,6 +63,7 @@
 		F7993A5F209F7FF200595393 /* DataAccessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccessLayer.swift; sourceTree = "<group>"; };
 		F7993A60209F7FF200595393 /* WordDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDAL.swift; sourceTree = "<group>"; };
 		F7993A63209F82B900595393 /* WordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordValidation.swift; sourceTree = "<group>"; };
+		F7993A6920A0DA7200595393 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		F7D66FA720995EAA00418C95 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		F7D66FA820995EAA00418C95 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F7D66FAA20995F0C00418C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = LearnVocabulary/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		F732FA5E209BBD4200B483AC /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
+				F7993A6820A0DA6800595393 /* Models */,
 				F7993A5E209F7FF200595393 /* Data Access Layer */,
 				F732FA61209BBD4200B483AC /* Model.xcdatamodeld */,
 				F71A9BCE209CF9310007D84A /* DataController.swift */,
@@ -169,6 +172,14 @@
 				F7993A60209F7FF200595393 /* WordDAL.swift */,
 			);
 			path = "Data Access Layer";
+			sourceTree = "<group>";
+		};
+		F7993A6820A0DA6800595393 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7993A6920A0DA7200595393 /* Word.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F7D66FAE2099612C00418C95 /* AddWord */ = {
@@ -336,6 +347,7 @@
 				F7D66FB22099612C00418C95 /* AddWordViewController.swift in Sources */,
 				F7D66FB82099684500418C95 /* StringExtension.swift in Sources */,
 				F71A9BCF209CF9310007D84A /* DataController.swift in Sources */,
+				F7993A6A20A0DA7200595393 /* Word.swift in Sources */,
 				F7146E7D209A2CAD00F3990F /* TextViewExtension.swift in Sources */,
 				F7D66FB32099612C00418C95 /* ListWordsViewController.swift in Sources */,
 				F732FA64209BBD4400B483AC /* Model.xcdatamodeld in Sources */,

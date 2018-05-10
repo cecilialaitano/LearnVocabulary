@@ -24,4 +24,14 @@ struct WordValidation {
     }
     return (true, nil)
   }
+
+  static func removeWhitespacesIfNeeded(_ text: String?) -> String {
+    guard let inputText = text else {
+      return String()
+    }
+    if inputText.trimmingCharacters(in: .whitespaces) == String() {
+      return String()
+    }
+    return inputText
+  }
 }

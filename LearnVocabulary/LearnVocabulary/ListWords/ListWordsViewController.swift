@@ -23,7 +23,6 @@ class ListWordsViewController: UIViewController {
     }
   }
 
-
     /*
     // MARK: - Navigation
 

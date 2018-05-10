@@ -17,7 +17,7 @@ class AddNewWordPresenter {
     self.view = view
   }
 
-  // MARK: Getters localized strings
+  // MARK: Getters titles & placeholder
   func getDefinitionTitle() -> String {
     return "Definition".localized()
   }
@@ -42,19 +42,9 @@ class AddNewWordPresenter {
     return "Example Placeholder".localized()
   }
 
-  // MARK: - Save button
-  func saveButtonIsEnable() -> Bool {
-    //TODO: add implementation: is false if word & definition are empty.
-    return true
-  }
-
-  // MARK: - New word TextField
+  // MARK: - TextField input validation
   func validateWhitespaces(_ text: String?) -> String {
-    if text?.trimmingCharacters(in: .whitespaces) == String() {
-     return String()
-    } else {
-      return text ?? String()
-    }
+    return WordValidation.removeWhitespacesIfNeeded(text)
   }
 
   // MARK: - TextView Delegate
@@ -98,8 +88,15 @@ class AddNewWordPresenter {
     if !result.isSuccess {
       view?.displaySaveError(result.error ?? "Some error occur")
     }
-    let newWord = Word(term: word.word!, definition: word.definition!, example: word.example, isHighlighted: false)
+    guard let term = word.word else {
+      return
+    }
+    guard let definition = word.definition else {
+      return
+    }
+    let newWord = Word(term: term, definition: definition, example: word.example, isHighlighted: false)
 
+    //TODO: Add a WordPersistenceAdapter class to call WordDAL there instead of.
     WordDAL().saveWord(newWord, saveWordResult: { (word, error) in
       if let error = error {
         view?.displaySaveError(error)
@@ -109,4 +106,3 @@ class AddNewWordPresenter {
     })
   }
 }
-

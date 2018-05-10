@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F70F578920A4D018008B11D1 /* WordPersistentAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F578820A4D018008B11D1 /* WordPersistentAdapterProtocol.swift */; };
+		F70F578B20A4D021008B11D1 /* WordPersistentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F578A20A4D021008B11D1 /* WordPersistentAdapter.swift */; };
 		F71A9BCF209CF9310007D84A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A9BCE209CF9310007D84A /* DataController.swift */; };
 		F732FA64209BBD4400B483AC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F732FA61209BBD4200B483AC /* Model.xcdatamodeld */; };
 		F787F68120990723000FC683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787F68020990723000FC683 /* AppDelegate.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F70F578820A4D018008B11D1 /* WordPersistentAdapterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPersistentAdapterProtocol.swift; sourceTree = "<group>"; };
+		F70F578A20A4D021008B11D1 /* WordPersistentAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPersistentAdapter.swift; sourceTree = "<group>"; };
 		F71A9BCE209CF9310007D84A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F732FA62209BBD4200B483AC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F787F67D20990723000FC683 /* LearnVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,9 +103,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F70F578720A4D00A008B11D1 /* WordPersistentAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				F70F578820A4D018008B11D1 /* WordPersistentAdapterProtocol.swift */,
+				F70F578A20A4D021008B11D1 /* WordPersistentAdapter.swift */,
+			);
+			name = WordPersistentAdapter;
+			path = LearnVocabulary/WordPersistentAdapter;
+			sourceTree = SOURCE_ROOT;
+		};
 		F732FA5E209BBD4200B483AC /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
+				F70F578720A4D00A008B11D1 /* WordPersistentAdapter */,
 				F7993A6820A0DA6800595393 /* Models */,
 				F7993A5E209F7FF200595393 /* Data Access Layer */,
 				F732FA61209BBD4200B483AC /* Model.xcdatamodeld */,
@@ -351,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F787F68120990723000FC683 /* AppDelegate.swift in Sources */,
+				F70F578920A4D018008B11D1 /* WordPersistentAdapterProtocol.swift in Sources */,
 				F7993A6D20A0F49200595393 /* InputTextView.swift in Sources */,
 				F7993A61209F7FF300595393 /* DataAccessLayer.swift in Sources */,
 				F7D66FB22099612C00418C95 /* AddWordViewController.swift in Sources */,
@@ -358,6 +374,7 @@
 				F71A9BCF209CF9310007D84A /* DataController.swift in Sources */,
 				F7993A6A20A0DA7200595393 /* Word.swift in Sources */,
 				F7D66FB32099612C00418C95 /* ListWordsViewController.swift in Sources */,
+				F70F578B20A4D021008B11D1 /* WordPersistentAdapter.swift in Sources */,
 				F732FA64209BBD4400B483AC /* Model.xcdatamodeld in Sources */,
 				F7993A64209F82B900595393 /* WordValidation.swift in Sources */,
 				F7D66FB52099617000418C95 /* AddNewWordPresenter.swift in Sources */,

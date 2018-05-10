@@ -14,7 +14,7 @@ class ListWordsViewController: UIViewController {
     super.viewDidLoad()
   }
   override func viewWillAppear(_ animated: Bool) {
-    if let words = WordDAL().fetchAllWords() {
+    if let words = WordPersistentAdapter().fetchAll() {
       for w in words {
         print(w.term)
         print(w.definition)

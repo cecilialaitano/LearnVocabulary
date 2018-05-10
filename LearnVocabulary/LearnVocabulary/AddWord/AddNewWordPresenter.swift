@@ -12,9 +12,11 @@ class AddNewWordPresenter {
 
   // MARK: - Properties
   private var view: AddWordProtocol?
+  private var adapter: WordPersistentAdapterProtocol?
 
-  init(view: AddWordProtocol) {
+  init(view: AddWordProtocol, adapter: WordPersistentAdapterProtocol) {
     self.view = view
+    self.adapter = adapter
   }
 
   // MARK: Getters titles & placeholder
@@ -94,14 +96,14 @@ class AddNewWordPresenter {
     guard let definition = word.definition else {
       return
     }
+
     let newWord = Word(term: term, definition: definition, example: word.example, isHighlighted: false)
 
-    //TODO: Add a WordPersistenceAdapter class to call WordDAL there instead of.
-    WordDAL().saveWord(newWord, saveWordResult: { (word, error) in
+    adapter?.save(word: newWord, saveWordResult: {(word, error) in
       if let error = error {
-        view?.displaySaveError(error)
+        self.view?.displaySaveError(error)
       } else {
-        view?.displaySavedSucces()
+        self.view?.displaySavedSucces()
       }
     })
   }

@@ -43,7 +43,8 @@ class AddWordViewController: UIViewController {
   }
 
   private func setup() {
-    presenter = AddNewWordPresenter(view: self)
+    //TODO: Add adapter with factory class
+    presenter = AddNewWordPresenter(view: self, adapter: WordPersistentAdapter())
     setupView()
   }
 

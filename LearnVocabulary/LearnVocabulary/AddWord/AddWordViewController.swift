@@ -82,6 +82,7 @@ class AddWordViewController: UIViewController {
 extension AddWordViewController: AddWordProtocol {
 
   func displaySavedSucces() {
+    //TODO: display status alert
     let alertSaved = UIAlertController(title: "Saved", message: nil, preferredStyle: .alert)
     alertSaved.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
       self.displayEmpty()
@@ -101,6 +102,17 @@ extension AddWordViewController: UITextFieldDelegate {
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.text = presenter.validateWhitespaces(textField.text)
     textField.resignFirstResponder()
+
+    //TODO: Suggestion - Add a magnyifing glass if the word has definition in apple dictionary,
+    //so user can touch and see it definition.
+    // on tap magnyfing glass open definition
+
+//    let word = "home"
+//    if UIReferenceLibraryViewController.dictionaryHasDefinitionForTerm(word) {
+//      let ref: UIReferenceLibraryViewController = UIReferenceLibraryViewController(term: word)
+//      self.presentViewController(ref, animated: true, completion: nil)
+//    }
+
     return true
   }
 }

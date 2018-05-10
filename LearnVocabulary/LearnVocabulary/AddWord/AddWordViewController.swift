@@ -11,7 +11,6 @@ import UIKit
 protocol AddWordProtocol {
   func displaySavedSucces()
   func displaySaveError(_ error: String)
-
 }
 
 enum TextViewCase: Int {
@@ -19,28 +18,23 @@ enum TextViewCase: Int {
   case example = 1
 }
 
-
 typealias WordBuilder = (word: String?, definition:String?, example: String?)
 
 class AddWordViewController: UIViewController {
 
   @IBOutlet weak var newWordTextField: UITextField!
   @IBOutlet weak var definitionLabel: UILabel!
-  @IBOutlet weak var definitionTextView: UITextView!
   @IBOutlet weak var exampleLabel: UILabel!
-  @IBOutlet weak var exampleTextView: UITextView!
   @IBOutlet weak var saveButton: UIButton!
-
+  @IBOutlet weak var definitionTextView: InputTextView!
+  @IBOutlet weak var exampleTextView: InputTextView!
+  
   // MARK: - Properties
   private var presenter: AddNewWordPresenter!
 
   override func viewDidLoad() {
     super.viewDidLoad()
     setup()
-  }
-
-  override func viewWillAppear(_ animated: Bool) {
-    displayEmpty()
   }
 
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -54,22 +48,25 @@ class AddWordViewController: UIViewController {
   }
 
   private func setupView() {
-    setType(definitionTextView, type: .definition)
-    setType(exampleTextView, type: .example)
+    definitionTextView.setupInputTextView(
+      type: .definition,
+      placeholder: presenter.getDefinitionPlaceholder(),
+      state: .empty)
+    exampleTextView.setupInputTextView(
+      type: .example,
+      placeholder: presenter.getExamplePlacehololder(),
+      state: .empty)
+    
     definitionLabel.text = presenter.getDefinitionTitle()
     newWordTextField.placeholder = presenter.getAddWordPlaceholder()
     exampleLabel.text = presenter.getExampleTitle()
     saveButton.setTitle(presenter.getSaveButtonTitle(), for: .normal)
-    definitionTextView.isEditable = true
-    exampleTextView.isEditable = true
-    definitionTextView.styleAs(placeholder: presenter.getDefinitionPlaceholder())
-    exampleTextView.styleAs(placeholder: presenter.getExamplePlacehololder())
   }
 
   private func displayEmpty() {
     newWordTextField.text = String()
-    definitionTextView.text = String()
-    exampleTextView.text = String()
+    definitionTextView.state = .empty
+    exampleTextView.state = .empty
   }
 
   // MARK: - Actions
@@ -79,15 +76,6 @@ class AddWordViewController: UIViewController {
                        example: exampleTextView.text)
 
     presenter.onTapSave(word: word)
-  }
-
-  // MARK: - Setup TextView's Types
-  func setType(_ textView: UITextView, type: TextViewCase) {
-    textView.tag = type.rawValue
-  }
-
-  func getType(_ textView: UITextView) -> TextViewCase {
-    return TextViewCase(rawValue: textView.tag)!
   }
 }
 
@@ -118,20 +106,26 @@ extension AddWordViewController: UITextFieldDelegate {
 }
 
 extension AddWordViewController: UITextViewDelegate {
-  //TODO: Automatically update placeholders and style while editing.
+
   func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
-    textView.text = presenter.textViewShouldBeginEditing(text: textView.text,
-                                                   type: getType(textView))
-    textView.styleAsFilled()
+    guard let inputTextView = textView as? InputTextView else {
+      return false
+    }
+    textView.text = presenter.textViewShouldBeginEditing(text: inputTextView.text,
+                                                           type: inputTextView.type)
+    inputTextView.state = .filled
     return true
   }
 
   func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
-    let result = presenter.textViewShouldEndEditing(text: textView.text,
-                                                    type: getType(textView))
+    guard let inputTextView = textView as? InputTextView else {
+      return false
+    }
+    let result = presenter.textViewShouldEndEditing(text: inputTextView.text,
+                                                    type: inputTextView.type)
     if result.styleAsPlaceholder {
-      textView.styleAs(placeholder: result.placeholder)
-    } 
+        inputTextView.state = .empty
+    }
     return true
   }
 

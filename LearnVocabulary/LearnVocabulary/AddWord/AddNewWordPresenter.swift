@@ -58,12 +58,8 @@ class AddNewWordPresenter {
   }
 
   // MARK: - TextView Delegate
-  func textViewShouldBeginEditing(text: String?, type: TextViewCase?) -> String {
-    guard let textViewType = type else {
-      return String()
-    }
-
-    switch textViewType {
+  func textViewShouldBeginEditing(text: String?, type: InputType) -> String {
+    switch type {
       case .definition:
         if text == getDefinitionPlaceholder() {
           return String()
@@ -72,19 +68,17 @@ class AddNewWordPresenter {
         if text == getExamplePlacehololder() {
           return String()
         }
+      default:
+      break
     }
-
     return text ?? String()
   }
 
-  func textViewShouldEndEditing(text: String?, type: TextViewCase?) -> (placeholder: String, styleAsPlaceholder: Bool) {
-    guard let textViewType = type else {
-      return (String(), false)
-    }
+  func textViewShouldEndEditing(text: String?, type: InputType) -> (placeholder: String, styleAsPlaceholder: Bool) {
     var text = text ?? String()
     text = text.trimmingCharacters(in: .whitespacesAndNewlines)
 
-    switch textViewType {
+    switch type {
       case .definition:
         if text == String()  {
           return (getDefinitionPlaceholder(), true)
@@ -93,6 +87,7 @@ class AddNewWordPresenter {
         if text == String()  {
           return (getExamplePlacehololder(), true)
         }
+      default: break
     }
     return (text, false)
   }
@@ -112,7 +107,6 @@ class AddNewWordPresenter {
         view?.displaySavedSucces()
       }
     })
-
   }
 }
 
